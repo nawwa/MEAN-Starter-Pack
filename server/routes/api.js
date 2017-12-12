@@ -36,7 +36,25 @@ router.get('/users', (req, res) => {
             .find()
             .toArray()
             .then((users) => {
+                console.log(users);
                 response.data = users;
+                res.json(response);
+            })
+            .catch((err) => {
+                sendError(err, res);
+                client.close();
+            });
+    });
+});
+
+// Post a user
+router.post('/user', (req, res) => {
+    connection((client) => {
+        var db = client.db('mean');
+        db.collection("users")
+            .insertOne(req.body)
+            .then((result) => {
+                response.data = result;
                 res.json(response);
             })
             .catch((err) => {
