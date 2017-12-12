@@ -1,10 +1,22 @@
+Basic starter for MEAN stak using Angular4
+
+
 # Mean
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
 
-## Development server
+## Prerequire
+
+Run `npm install`
+Install MongoDB and create a  `mean` collection
+
+## Development Server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Using Express
+
+Run `node server` for a express server. Navigate to `http://localhost:3000/`. The app will use the /dist folder so you need to build it first
 
 ## Code scaffolding
 
@@ -25,3 +37,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# MEAN-Starter-Pack
+
